@@ -1,5 +1,55 @@
 # REDIS
 
+## INIT
+```go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+// import  "strconv"
+// import "sync"
+import "time"
+import "github.com/go-redis/redis"
+
+// Сессия подключения
+var client *redis.Client
+
+// **************************************************
+// Подключение к базе данных Redis
+// **************************************************
+func init() {
+
+	client = redis.NewClient(&redis.Options{
+		Addr:         ":6379",
+		DialTimeout:  10 * time.Second,
+		ReadTimeout:  30 * time.Second,
+		WriteTimeout: 30 * time.Second,
+		PoolSize:     10,
+		PoolTimeout:  30 * time.Second,
+		DB:           2,
+	})
+
+	// Очистка
+	//client.FlushDB()
+}
+
+type Mst map[string]interface{}
+
+type Corp struct {
+	Title string `json:"title"`
+	Name  string `json:"name"`
+	Form  string `json:"form"`
+}
+
+func main() {
+	Iterrator()
+}
+```
+
+
 ## SET
 ```go
 unc SettMain() {
