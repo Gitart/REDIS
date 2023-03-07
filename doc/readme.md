@@ -7,12 +7,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-)
-
-// import  "strconv"
-// import "sync"
-import "time"
-import "github.com/go-redis/redis"
+	"time"
+	"github.com/go-redis/redis"
+ )
 
 // Сессия подключения
 var client *redis.Client
@@ -32,7 +29,7 @@ func init() {
 		DB:           2,
 	})
 
-	// Очистка
+	// Clear all data
 	//client.FlushDB()
 }
 
