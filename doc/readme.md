@@ -196,7 +196,7 @@ func HMSET() {
 ```
 
 
-## HGET
+## 📚 HGET
 ```go
 func HSETHGET() {
 
@@ -249,7 +249,7 @@ func HSETHGET() {
 ```
 
 
-## JSON
+## 🎁 JSON
 ```go
 
 // Set Get json
@@ -290,7 +290,7 @@ func Set_Json() {
 
 
 
-## DELETE
+## 🔥 DELETE
 ```go
 // *************************************
 // Удаление ключей
@@ -303,7 +303,7 @@ func Deleting() {
 
 
 
-## PUBLISH - SUBSCRIBE
+## 🎞 PUBLISH - SUBSCRIBE
 ```go
 // Pub Sub in chanel
 func Pub_Sub() {
@@ -355,7 +355,7 @@ func Subb(ch string) {
 }
 ```
 
-## FIND IN FOR
+## 👓 FIND IN FOR
 ```go
 
 // Iterator
