@@ -1,4 +1,5 @@
-## Basic commands 
+# Basic commands 
+[Full list all commands](https://redis.io/commands)   
 
 ### Limits
 * The max length of a Redis list is **2^32** - 1 (**4,294,967,295**) elements.  
