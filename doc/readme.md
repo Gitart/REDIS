@@ -1,6 +1,6 @@
 # REDIS
 
-## INIT
+## 🛠 INIT
 ```go
 package main
 
@@ -50,7 +50,7 @@ func main() {
 ```
 
 
-## MSET
+## 📑 MSET
 ```go
 unc SettMain() {
 	fmt.Println("CLIENT ID", client.ClientID())
@@ -123,7 +123,7 @@ unc SettMain() {
 ```
 
 
-## Set for
+## 📒 SET FOR
 
 ```go
 
@@ -161,7 +161,7 @@ func AllOpertaion() {
 ```
 
 
-## HSET
+## 📄 HSET
 ![image](https://user-images.githubusercontent.com/3950155/223431990-226e6c8c-ee84-4c81-876f-7cf14d28a57e.png)
 
 ```go
