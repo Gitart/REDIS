@@ -50,7 +50,7 @@ func main() {
 ```
 
 
-## SET
+## MSET
 ```go
 unc SettMain() {
 	fmt.Println("CLIENT ID", client.ClientID())
@@ -126,15 +126,16 @@ unc SettMain() {
 ## Set for
 
 ```go
+
 // *************************************
 // Загрузка записей
 // *************************************
 func AllOpertaion() {
 
 	// Добавление значения
-	client.Set("key2", "Другой", 0)
-	client.Set("key3", "Новости пример", 0)
-	client.Set("key2:456", "Вот пример простой", 0)
+	client.Set("key2", "First element", 0)
+	client.Set("key3", "New element", 0)
+	client.Set("key2:456", "Example simple for insert", 0)
 
 	err := client.Set("key", "value", 0).Err()
 	if err != nil {
@@ -161,6 +162,8 @@ func AllOpertaion() {
 
 
 ## HSET
+![image](https://user-images.githubusercontent.com/3950155/223431990-226e6c8c-ee84-4c81-876f-7cf14d28a57e.png)
+
 ```go
 // Main
 func HMSET() {
