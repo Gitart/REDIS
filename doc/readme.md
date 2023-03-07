@@ -303,6 +303,26 @@ func Set_Json() {
 ```
 
 
+## 📥 Zset
+```go
+func Zstett() {
+	dat := []redis.Z{
+		{2, "Jokker"},
+		{1, "Old Joker"},
+		{21, "Batman 22"},
+	}
+
+	// ZSET
+	// Order by Score
+	client.ZAdd("user:1", dat...)
+
+	// Получить всех с 3 по 4 а по номеру
+	// строки 3 и 4 включительно
+	// (!!!! не по score)
+	cls := client.ZRange("user:1", 3, 4)
+	fmt.Println(cls.Result())
+}
+```
 
 
 ## 🔥 DELETE
