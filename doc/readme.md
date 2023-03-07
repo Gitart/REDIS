@@ -1,4 +1,5 @@
 # REDIS
+![image](https://user-images.githubusercontent.com/3950155/223433503-34e542c3-b119-4dcc-8be2-41c276e14032.png)
 
 ## 🛠 INIT
 ```go
